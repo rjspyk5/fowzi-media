@@ -1,8 +1,11 @@
-import React from "react";
+import bg from '../../../assets/images/footerr.png'
 
 export const Footer = () => {
   return (
-    <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">
+    <footer style={{
+      backgroundImage: `url(${bg})`,
+    }}  className="footer bg-no-repeat relative bg-cover bg-center sm:footer-horizontal bg-base-200 text-base-content p-10">
+      <div className='absolute w-full h-full bg-[#000000E5]'></div>
     <aside>
       <svg
         width="50"

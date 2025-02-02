@@ -7,24 +7,24 @@ export const Navbar = () => {
   const menu = (
     <>
       <li>
-        <NavLink className={({isActive})=>isActive ? "font-bold":""} to="/">Home</NavLink>
+        <NavLink className={({isActive})=>isActive ? "font-bold text-white":"text-deem"} to="/">Home</NavLink>
       </li>
       <li>
-        <NavLink className={({isActive})=>isActive ? "font-bold":""} to="/about">About us</NavLink>
+        <NavLink className={({isActive})=>isActive ? "font-bold text-white":"text-deem"} to="/about">About us</NavLink>
       </li>
       <li>
-        <NavLink className={({isActive})=>isActive ? "font-bold":""} to="/sub">Sub brand</NavLink>
+        <NavLink className={({isActive})=>isActive ? "font-bold text-white":"text-deem"} to="/sub">Sub brand</NavLink>
       </li>
       <li>
-        <NavLink className={({isActive})=>isActive ? "font-bold":""} to="/choose">Choose</NavLink>
+        <NavLink className={({isActive})=>isActive ? "font-bold text-white":"text-deem"} to="/choose">Choose</NavLink>
       </li>
       <li>
-        <NavLink className={({isActive})=>isActive ? "font-bold":""} to="/contact">Contact Us</NavLink>
+        <NavLink className={({isActive})=>isActive ? "font-bold text-white":"text-deem"} to="/contact">Contact Us</NavLink>
       </li>
     </>
   );
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar p-0">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -50,7 +50,7 @@ export const Navbar = () => {
             {menu}
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost text-xl">
+        <Link to="/" className="">
         <img src={logo} alt="" />
         </Link>
       </div>
