@@ -13,10 +13,10 @@ export const Footer = () => {
       <footer className="footer  sm:footer-horizontal">
         <aside className="relative z-50">
           <img src={logo} alt="" />
-          <p className="text-white">
-            ACME Industries Ltd.
+          <p className="text-white mt-7">
+          1729 N 2nd St Studio 
             <br />
-            Providing reliable tech since 1992
+            204A,Minneapolis, MN 55411
           </p>
         </aside>
         <nav className="relative z-50">
