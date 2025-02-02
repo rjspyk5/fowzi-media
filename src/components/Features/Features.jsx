@@ -6,7 +6,7 @@ import meeting from '../../assets/images/meeting.png'
 
 export const Features = () => {
   return (
-    <div className="lg:mx-[8%] md:mx-[6%] mx-[3%] space-y-5">
+    <div className="lg:mx-[8%] md:mx-[6%] mx-[3%] space-y-5 my-36">
       <div className="flex justify-between rounded-2xl p-6  border-[1px] bg-[#FFFFFF0D] backdrop-blur-3xl border-[#FFFFFF0D]">
         <div className="w-1/2 flex flex-col items-center justify-center">
           <div className="max-w-md ">

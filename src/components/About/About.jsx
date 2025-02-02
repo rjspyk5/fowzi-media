@@ -6,7 +6,7 @@ import camera from '../../assets/images/camera.png'
 
 export const About = () => {
   return (
-    <div className='flex'>
+    <div className='flex lg:mx-[8%] md:mx-[6%] mx-[3%] mb-36'>
         <div className="w-1/2 flex gap-7">
         <div className="">
             <img src={lookInto} alt="" />

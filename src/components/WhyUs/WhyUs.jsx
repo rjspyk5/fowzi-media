@@ -7,14 +7,14 @@ import two from '../../assets/icons/Group.png'
 
 export const WhyUs = () => {
   return (
-    <div>
+    <div className="lg:mx-[8%] md:mx-[6%] mx-[3%] mb-36">
       <SectionHeading
         first={"Why"}
         second={"Fowzi Media"}
         button="Service"
         className={" w-full flex justify-center flex-col items-center"}
       />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-7 mt-12">
         
         <Card
           title="Comprehensive Services"
