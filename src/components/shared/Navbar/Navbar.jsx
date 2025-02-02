@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router";
 import logo from '../../../assets/logo/logo.png'
 import { PrimaryButton } from "../../Button/PrimaryButton/PrimaryButton";
+import { IoIosArrowRoundForward } from "react-icons/io";
 
 export const Navbar = () => {
   const menu = (
@@ -57,7 +58,7 @@ export const Navbar = () => {
         <ul className="menu menu-horizontal px-1 text-lg">{menu}</ul>
       </div>
       <div className="navbar-end">
-     <PrimaryButton name="Explore Fowzi Prints" />
+     <PrimaryButton name={"Explore Fowzi Prints " }  />
       </div>
     </div>
   );
