@@ -6,8 +6,8 @@ import camera from '../../assets/images/camera.png'
 
 export const About = () => {
   return (
-    <div className='flex lg:mx-[8%] md:mx-[6%] mx-[3%] mb-36'>
-        <div className="w-1/2 flex gap-7">
+    <div className='flex flex-col-reverse lg:flex-row gap-5 lg:gap-0 lg:mx-[8%] md:mx-[6%] mx-[3%] mb-20 md:mb-36'>
+        <div className="lg:w-1/2 flex  gap-7">
         <div className="">
             <img src={lookInto} alt="" />
         </div>
@@ -17,7 +17,7 @@ export const About = () => {
         </div>
         
         </div>
-        <div className="w-1/2 flex justify-end items-center">
+        <div className="lg:w-1/2 flex lg:justify-end items-center">
         <SectionHeading first={"About"} second={"Fowzi Media"} button={"About us"} subheading={"We bring together digital, print, and studio services to help your business grow with an integrated approach. Our experienced team delivers high-quality results tailored to your brand’s needs.'- Visual: A single, clean icon or graphic that represents collaboration, such as three intersecting lines or shapes, symbolizing the three sub-brands."} />
         </div>
     </div>

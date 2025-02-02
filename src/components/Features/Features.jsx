@@ -6,12 +6,12 @@ import meeting from '../../assets/images/meeting.png'
 
 export const Features = () => {
   return (
-    <div className="lg:mx-[8%] md:mx-[6%] mx-[3%] space-y-5 my-36">
-      <div className="flex justify-between rounded-2xl p-6  border-[1px] bg-[#FFFFFF0D] backdrop-blur-3xl border-[#FFFFFF0D]">
+    <div className="lg:mx-[8%] md:mx-[6%] mx-[3%] space-y-5 md:my-36 my-20">
+      <div className="flex justify-between rounded-2xl md:p-6 p-3  border-[1px] bg-[#FFFFFF0D] backdrop-blur-3xl border-[#FFFFFF0D]">
         <div className="w-1/2 flex flex-col items-center justify-center">
           <div className="max-w-md ">
-            <h1 className="text-3xl font-bold">High-Quality Print Solutions</h1>
-            <p className="py-6 text-base text-deem">
+            <h1 className="md:text-3xl text-xl font-bold">High-Quality Print Solutions</h1>
+            <p className="md:py-6 py-3  md:text-base text-xs text-deem">
             From business cards to banners, Fowzi Prints delivers exceptional results tailored to your needs
             </p>
            <PrimaryButton name="Explore Fowzi Prints"/>

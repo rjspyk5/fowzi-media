@@ -4,15 +4,15 @@ import { FaArrowRightLong } from 'react-icons/fa6'
 
 export const FeatruesCard = ({img,title,subtitle,buttonName}) => {
   return (
-      <div className="flex justify-between rounded-2xl p-5 border-[1px] bg-[#FFFFFF0D] border-[#FFFFFF0D]">
+      <div className="flex justify-between rounded-2xl md:p-5 p-3 border-[1px] bg-[#FFFFFF0D] border-[#FFFFFF0D]">
             <div className="w-1/2">
               <div className="max-w-md">
-                <h1 className="text-2xl font-bold">{title}</h1>
-                <p className="py-3 text-sm">
+                <h1 className="md:text-2xl text-lg font-bold">{title}</h1>
+                <p className="py-3 md:text-sm text-xs">
                 {subtitle}
                 </p>
     
-     <button className={`cursor-pointer font-bold border  rounded-lg px-[10px] py-[10px] flex items-center gap-2`}>{buttonName} <FaArrowRightLong/></button>
+     <button className={`cursor-pointer font-bold border text-xs md:text-base   rounded-lg md:p-[10px] p-2 flex items-center gap-2`}>{buttonName} <FaArrowRightLong/></button>
               </div>
             </div>
             <div className="w-1/2">

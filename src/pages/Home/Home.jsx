@@ -4,16 +4,23 @@ import { Contact } from '../../components/Contact/Contact'
 import { WhyUs } from '../../components/WhyUs/WhyUs'
 import { About } from '../../components/About/About'
 import { Features } from '../../components/Features/Features'
+import { Fade } from 'react-awesome-reveal'
 
 export const Home = () => {
   return (
     <div>
-        <Hero/>
-        <Features/>
-        <About/>
-        <WhyUs/>
+      <Fade><Hero/></Fade>
+      <Fade><Features/></Fade>
+      <Fade> <About/></Fade>
+      <Fade><WhyUs/></Fade>
+      <Fade><Contact/></Fade>
+      
+        
+        
        
-        <Contact/>
+        
+       
+        
     </div>
   )
 }

@@ -4,15 +4,15 @@ import nannku from '../../assets/images/nannkupremanthu.png'
 
 export const Contact = () => {
   return (
-    <div className="flex gap-2 lg:mx-[8%] md:mx-[6%] mx-[3%] mb-36">
-      <div className="w-1/2">
+    <div className="flex flex-col md:flex-row gap-5 md:gap-2 lg:mx-[8%] md:mx-[6%] mx-[3%] mb-36">
+      <div className="md:w-1/2">
         <SectionHeading
           first={"Let's Get"}
           second={"Started"}
           button="Service"
           subheading="We’d love to discuss how we can help your business. Contact us today"
         />
-        <div className="">
+        <div className="mt-5">
           <form className="space-y-4 *:rounded-lg *:p-3">
             <input
               type="text"
@@ -50,8 +50,8 @@ export const Contact = () => {
           </form>
         </div>
       </div>
-      <div className="w-1/2 flex justify-end items-center">
-      <img className="w-[75%]" src={nannku} alt="" />
+      <div className="md:w-1/2 flex justify-end items-center">
+      <img className="w-full md:w-[75%]" src={nannku} alt="" />
       </div>
     </div>
   );
