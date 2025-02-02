@@ -1,22 +1,24 @@
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
+import logo from '../../../assets/logo/logo.png'
+import { PrimaryButton } from "../../Button/PrimaryButton/PrimaryButton";
 
 export const Navbar = () => {
   const menu = (
     <>
       <li>
-        <NavLink className={({isActive})=>isActive && "font-bold"} to="/">Home</NavLink>
+        <NavLink className={({isActive})=>isActive ? "font-bold":""} to="/">Home</NavLink>
       </li>
       <li>
-        <NavLink className={({isActive})=>isActive && "font-bold"} to="/about">About us</NavLink>
+        <NavLink className={({isActive})=>isActive ? "font-bold":""} to="/about">About us</NavLink>
       </li>
       <li>
-        <NavLink className={({isActive})=>isActive && "font-bold"} to="/sub">Sub brand</NavLink>
+        <NavLink className={({isActive})=>isActive ? "font-bold":""} to="/sub">Sub brand</NavLink>
       </li>
       <li>
-        <NavLink className={({isActive})=>isActive && "font-bold"} to="/choose">Choose</NavLink>
+        <NavLink className={({isActive})=>isActive ? "font-bold":""} to="/choose">Choose</NavLink>
       </li>
       <li>
-        <NavLink className={({isActive})=>isActive && "font-bold"} to="/contact">Contact Us</NavLink>
+        <NavLink className={({isActive})=>isActive ? "font-bold":""} to="/contact">Contact Us</NavLink>
       </li>
     </>
   );
@@ -47,13 +49,15 @@ export const Navbar = () => {
             {menu}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <Link to="/" className="btn btn-ghost text-xl">
+        <img src={logo} alt="" />
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-lg">{menu}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+     <PrimaryButton name="Explore Fowzi Prints" />
       </div>
     </div>
   );

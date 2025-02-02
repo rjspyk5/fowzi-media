@@ -2,6 +2,13 @@
 
 @plugin "daisyui";
 
+
+
+@theme {
+    --color-primary-1: #FF0101;
+    --color-tahiti: #3ab7bf;
+ 
+  }
 body{
     font-family: "Teachers", serif;
 }
